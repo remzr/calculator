@@ -40,6 +40,12 @@ function operate(firstNumber, operator, secondNumber) {
     }
 }
 
+//5. Function to populate display (need eventlistener)
+
+function populateDisplay(buttonValue) {
+
+}
+
 console.log(operate(3,"+",5));
 console.log(operate(3,"-",5));
 console.log(operate(3,"*",5));
