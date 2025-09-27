@@ -22,7 +22,23 @@ let userNumberOne;
 let userNumberTwo;
 let userOperator;
 
-console.log(addNumbers(1,2));
-console.log(subtractNumbers(1,2));
-console.log(multiplyNumbers(1,2));
-console.log(divideNumbers(1,2));
+function operate(firstNumber, operator, secondNumber) {
+    console.log("Function called");
+
+    if (operator == "+") {
+        return addNumbers(firstNumber, secondNumber);
+    } else if (operator == "-") {
+        return subtractNumbers(firstNumber, secondNumber);
+    } else if (operator == "*") {
+        return multiplyNumbers(firstNumber,secondNumber);
+    } else if (operator == "/") {
+        return divideNumbers(firstNumber, secondNumber);
+    } else {
+        throw "Syntax Error";
+    }
+}
+
+console.log(operate(3,"+",5));
+console.log(operate(3,"-",5));
+console.log(operate(3,"*",5));
+console.log(operate(3,"/",5));
