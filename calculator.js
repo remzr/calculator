@@ -22,6 +22,8 @@ let userNumberOne;
 let userNumberTwo;
 let userOperator;
 
+//3. Main operation
+
 function operate(firstNumber, operator, secondNumber) {
     console.log("Function called");
 
